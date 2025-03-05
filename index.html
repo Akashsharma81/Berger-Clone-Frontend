@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Hut</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header" >
+    <nav class="navbar">
+      <div class="logo">🍔 Burger Hut</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="cta-buttons">
+        <a href="#order" class="btn order-btn">Order Now</a>
+      </div>
+      <!-- Burger Menu Icon -->
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </nav>
+  </header>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-title">Where Taste Meets Creativity 🍔🔥</h1>
+      <p class="hero-subtext">Fresh, juicy burgers crafted to perfection for every craving.</p>
+      <div class="hero-buttons">
+        <a href="#order" class="btn primary-btn">Order Now</a>
+        <a href="#menu" class="btn secondary-btn">View Menu</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="burg-removebg-preview.png" alt="Delicious Burger">
+    </div>
+  </section>
+
+
+<!-- about section -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2 class="about-title">Our Story 🍔</h2>
+        <p class="about-description">
+          Welcome to <span class="highlight">Burger Hut</span>, where taste meets creativity!  
+          From sizzling handcrafted patties to the freshest toppings, we craft every burger with love and passion.  
+          Whether you crave bold flavors or the comfort of classic burgers, we’ve got something special for you.  
+          Join us for a juicy adventure that leaves your taste buds craving more!
+        </p>
+        <p class="signature">— The Burger Hut Team</p>
+      </div>
+      <div class="about-image">
+        <img src="burger.jpeg" alt="Burger Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- menu section -->
+  <section class="menu-section" id="menu">
+    <h2 class="menu-title">Our Delicious Menu 🍔</h2>
+    <div class="menu-items">
+      <div class="menu-card">
+        <img src="burger.jpg" alt="Classic Burger">
+        <h3>Classic Burger</h3>
+        <p>Juicy beef patty, fresh lettuce, and cheddar cheese.</p>
+        <span class="price">₹199</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="burger.jpg" alt="Cheese Burst Burger">
+        <h3>Cheese Burst Burger</h3>
+        <p>Loaded with molten cheese and premium sauces.</p>
+        <span class="price">₹249</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="burger.jpg" alt="Loaded Fries">
+        <h3>Loaded Fries</h3>
+        <p>Crispy fries topped with cheese sauce and herbs.</p>
+        <span class="price">₹149</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="burger.jpg" alt="Choco Shake">
+        <h3>Choco Shake</h3>
+        <p>Rich and creamy chocolate indulgence.</p>
+        <span class="price">₹99</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2 class="contact-title">Get in Touch 📞</h2>
+    <div class="contact-container">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>📍 Address: Burger Hut, Main Street, Gorakhpur</p>
+        <p>📧 Email: contact@burgerhut.com</p>
+        <p>📞 Phone: +91 9876543210</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Burger Hut. All Rights Reserved.</p>
+      <ul class="social-icons">
+        <li><a href="https://www.google.com/">  <img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png" alt="Facebook"></a></li>
+        <li><a href="https://x.com/">           <img src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png" alt="Twitter"></a></li>
+        <li><a href="https://www.instagram.com/"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="Instagram"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const burger = document.querySelector('.burger');
+      const navLinks = document.querySelector('.nav-links');
+
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+
+  </script>
+
+</body>
+</html>
+<!-- //burger.jpgr -->
